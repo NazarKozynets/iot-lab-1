@@ -1,0 +1,20 @@
+{
+	"name": "iot-lab-1",
+	"version": "1.0.0",
+	"private": true,
+	"scripts": {
+		"start": "node-red --userDir . --settings settings.js flows.json",
+		"format": "prettier --write flows.json settings.js package.json README.md",
+		"format:check": "prettier --check flows.json settings.js package.json README.md"
+	},
+	"engines": {
+		"node": ">=18"
+	},
+	"dependencies": {
+		"node-red": "4.1.7",
+		"node-red-dashboard": "3.6.6"
+	},
+	"devDependencies": {
+		"prettier": "3.9.10"
+	}
+}
